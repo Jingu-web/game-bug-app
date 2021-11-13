@@ -1,6 +1,14 @@
-body {
-  max-width: 1300px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 img {
@@ -10,7 +18,9 @@ img {
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background: #252526;
+  border-bottom: 1px solid #393a3b;
 }
 
 #header #nav {
@@ -21,7 +31,7 @@ img {
 #header #nav li {
   width: 110px;
   text-align: center;
-  background-color: #333;
+  background-color: #252526;
   height: 50px;
   line-height: 50px;
   margin-right: 2px;
@@ -34,11 +44,41 @@ img {
   padding: 20px;
 }
 
+#header .h-logo img {
+  width: 35px;
+  height: 36px;
+}
+
+#header .h-title {
+  font-size: 30px;
+}
+
 #footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #252526;
+  color: #7e7e7e;
   text-align: center;
   padding: 10px 0;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 20px;
+}
+
+#footer .f-content {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#footer .f-logo img {
+  width: 80px;
+}
+
+#footer .f-item {
+  margin: 12px;
+}
+
+#footer .f-item a {
+  color: #7e7e7e;
+}
+
+#footer .f-item a:hover {
+  color: #fff;
 }
